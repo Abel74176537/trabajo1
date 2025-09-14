@@ -4,10 +4,11 @@ import com.example.mscliente.Entity.Cliente;
 import com.example.mscliente.Repository.ClienteRepository;
 import com.example.mscliente.Service.ClienteService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
-
+@Service
 public class ClienteServiceImpl implements ClienteService {
     @Autowired
     private ClienteRepository clienteRepository;
