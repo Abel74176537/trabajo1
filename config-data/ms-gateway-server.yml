@@ -21,18 +21,12 @@ spring:
               enabled: true
               lower-case-service-id: true
           routes:
-            - id: ms-catalogo
-              uri: lb://ms-catalogo
+            - id: ms-curso
+              uri: lb://ms-curso
               predicates:
-                - Path=/categoria/**
-            - id: ms-producto
-              uri: lb://ms-producto
-              predicates:
-                - Path=/producto/**
-            - id: ms-cliente
-              uri: lb://ms-cliente
-              predicates:
-                - Path=/cliente/**
+                - Path=/Curso/**
+
+
               # Si tu servicio real no expone /categoria/...:
               # filters:
               #   - StripPrefix=1

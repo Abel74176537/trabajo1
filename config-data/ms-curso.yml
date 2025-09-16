@@ -2,7 +2,7 @@ server:
   port: 8083
 spring:
   application:
-    name: ms-cliente
+    name: ms-curso
 
   datasource:
     url: jdbc:mysql://localhost:3306/ms_curso
