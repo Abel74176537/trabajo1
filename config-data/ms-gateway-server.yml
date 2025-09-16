@@ -14,17 +14,19 @@ spring:
 
   cloud:
     gateway:
-      discovery:
-        locator:
-          enabled: true
-          lower-case-service-id: true
-      routes:
-        - id: ms-curso
-          uri: lb://ms-curso
-          predicates:
-            - Path=/curso/**
+      server:
+        webflux:
+          discovery:
+            locator:
+              enabled: true
+              lower-case-service-id: true
+          routes:
+            - id: ms-curso
+              uri: lb://ms-curso
+              predicates:
+                - Path=/curso/**
 
-        - id: ms-matricula
-          uri: lb://ms-matricula
-          predicates:
-            - Path=/matricula/**
+            - id: ms-matricula
+              uri: lb://ms-matricula
+              predicates:
+                - Path=/matricula/**
