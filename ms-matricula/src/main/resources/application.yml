@@ -1,6 +1,6 @@
 spring:
   application:
-    name: ms-curso
+    name: ms-matricula
   profiles:
     active: development
   config:
