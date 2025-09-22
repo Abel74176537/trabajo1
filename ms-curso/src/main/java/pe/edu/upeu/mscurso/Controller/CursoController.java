@@ -8,7 +8,7 @@ import pe.edu.upeu.mscurso.Service.CursoService;
 import java.util.List;
 
 @RestController
-@RequestMapping("/Curso")
+@RequestMapping("/curso")
 public class CursoController {
     @Autowired
     CursoService cursoService;
