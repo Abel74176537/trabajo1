@@ -11,7 +11,7 @@ import lombok.Data;
 public class Curso {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id;
+    private Integer idCurso;
     private String nombre;
     private String codigo;
 }
